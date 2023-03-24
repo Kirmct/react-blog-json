@@ -41,6 +41,10 @@ const FeedModal = ({ post, user, setModalPost }: Props) => {
     }
   };
 
+  const handleLeaveClick = (event: React.MouseEvent<HTMLDivElement>) => {
+    setModalPost(false);
+  };
+
   return (
     <>
       {loading && <Loading />}
@@ -48,6 +52,9 @@ const FeedModal = ({ post, user, setModalPost }: Props) => {
         <div className={styles.modal} onClick={handleOutsideClick}>
           {post && user && (
             <div className={styles.post}>
+              <div className={styles.btnLeave} onClick={handleLeaveClick}>
+                X
+              </div>
               <div className={styles.postContent}>
                 <div className={styles.postTitle}>
                   <div>
