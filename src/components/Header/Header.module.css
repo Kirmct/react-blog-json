@@ -1,0 +1,49 @@
+.header {
+  background: rgb(34, 34, 65);
+  background: linear-gradient(
+    0deg,
+    rgba(34, 34, 65, 1) 0%,
+    rgba(25, 30, 60, 1) 100%
+  );
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  color: #f3f3f3;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  top: 0;
+}
+
+.nav {
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu {
+  display: flex;
+  gap: 1rem;
+}
+.menu li {
+  padding: 6px 12px;
+  background-color: #0a102f;
+  border-radius: 0.4rem;
+  transition: 0.3s;
+}
+.menu li:hover {
+  background-color: #0b143f;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+@media (max-width: 550px) {
+  .menu {
+    gap: 0.4rem;
+  }
+  .menu li {
+    font-size: 0.85rem;
+    padding: 6px 6px;
+  }
+}

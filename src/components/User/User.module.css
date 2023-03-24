@@ -1,0 +1,44 @@
+.userCard {
+  background: rgb(34, 34, 59);
+  background: linear-gradient(
+    45deg,
+    rgba(34, 34, 59, 1) 0%,
+    rgba(25, 30, 60, 1) 100%
+  );
+  box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.4);
+  padding: 1rem;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  border-radius: 0.4rem;
+  max-width: 600px;
+}
+
+.userCard:hover {
+  background-color: bisque;
+}
+.userCardBody ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.userCardBody li {
+  display: flex;
+  align-items: flex-end;
+  line-height: 1.15;
+  letter-spacing: 1px;
+}
+.userCardBody li img {
+  margin-right: 0.2rem;
+  margin-top: -0.1rem;
+}
+.userCardBody li span {
+  color: #cdcdcd;
+  display: flex;
+  font-family: var(--type-first);
+  margin-right: 0.2rem;
+}
+.userCardHeader h2,
+p {
+  margin: 0;
+  padding: 0;
+}

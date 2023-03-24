@@ -1,0 +1,55 @@
+.userCard {
+  background: rgb(34, 34, 59);
+  background: linear-gradient(
+    45deg,
+    rgba(34, 34, 59, 1) 0%,
+    rgba(25, 30, 60, 1) 100%
+  );
+  box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.4);
+
+  padding: 1rem;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  border-radius: 0.4rem;
+  max-width: 600px;
+}
+
+.userCardBody ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.userCardBody li {
+  display: flex;
+  align-items: flex-end;
+  letter-spacing: 1px;
+}
+.userCardBody li img {
+  margin-right: 0.2rem;
+  margin-top: -0.1rem;
+}
+.userCardBody li span {
+  color: #cdcdcd;
+  display: flex;
+  font-family: var(--type-first);
+  margin-right: 0.2rem;
+}
+li.detailsItem {
+  display: block;
+}
+.detailsHeader {
+  margin-bottom: 0.2rem;
+}
+.detailsItem span p {
+  margin-left: 0.2rem;
+  color: #f3f3f3;
+}
+
+.detailsBody {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  color: #f3f3f3;
+  margin-left: 1.5rem;
+  line-height: 1.3;
+}

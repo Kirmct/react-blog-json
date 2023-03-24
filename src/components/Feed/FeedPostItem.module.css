@@ -1,0 +1,79 @@
+.cardContainer {
+  background: rgb(34, 34, 59);
+  background: linear-gradient(
+    45deg,
+    rgba(34, 34, 59, 1) 0%,
+    rgba(25, 30, 60, 1) 100%
+  );
+  color: #fff;
+  padding: 0.875rem 1rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  max-width: 500px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  min-height: 200px;
+  transition: 0.2s;
+  box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.4);
+}
+
+.cardContainer:hover {
+  background-color: #0f0f20;
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cardHeader h3 {
+  font-size: 1.25rem;
+}
+.cardHeader h3:hover {
+  text-decoration: underline;
+}
+
+.cardHeader p {
+  font-size: 0.875rem;
+}
+
+.cardHeaderInfo p {
+  margin-top: 0.4rem;
+}
+
+.cardHeaderInfoPost {
+  background-color: #f3f3f3;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+}
+.cardBody h3 {
+  text-transform: capitalize;
+  margin-bottom: 0.4rem;
+}
+.cardBody p::first-letter {
+  text-transform: uppercase;
+}
+.commentCard {
+  background: #fefefe;
+  width: 100%;
+  border-radius: 0.4rem;
+  min-height: 80px;
+  max-height: 450px;
+  overflow-y: scroll;
+}
+
+@media (max-width: 500px) {
+  .cardContainer {
+    max-width: 360px;
+    max-height: 500px;
+  }
+  .commentCard {
+    max-height: 200px;
+  }
+}

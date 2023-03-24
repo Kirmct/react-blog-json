@@ -1,0 +1,143 @@
+@keyframes scaleUp {
+  to {
+    opacity: initial;
+    transform: initial;
+  }
+}
+@keyframes opacityUp {
+  to {
+    opacity: initial;
+  }
+}
+.modal {
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  opacity: 0;
+  animation: opacityUp 0.4s forwards;
+}
+
+.post {
+  transition: 0.4;
+
+  transform: scale(0.8);
+  opacity: 0;
+  animation: scaleUp 0.5s forwards;
+  max-width: 700px;
+  background-color: #f3f3f3;
+  display: flex;
+  border-radius: 0.4rem;
+  gap: 1rem;
+}
+.postContent {
+  flex: 1;
+  padding: 2rem 0 2rem 2rem;
+  border-radius: 0.4rem 0 0 0.4rem;
+  background: rgb(34, 34, 59);
+  background: linear-gradient(
+    0deg,
+    rgba(34, 34, 59, 1) 0%,
+    rgba(25, 30, 60, 1) 100%
+  );
+  color: #f3f3f3;
+}
+.postTitle {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 0.875rem;
+  margin-bottom: 0.875rem;
+}
+.postTitle h2 {
+  cursor: pointer;
+  margin-bottom: 0.2rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+.postTitle h2:hover {
+  text-decoration: underline;
+}
+.postTitle p {
+  background-color: #f3f3f3;
+  color: #22223b;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.postBody {
+  margin-right: 0.875rem;
+}
+.postCommentsTitle {
+  color: #333;
+}
+
+.postBody h3 {
+  text-transform: capitalize;
+  margin-bottom: 0.3rem;
+}
+
+.postBody p::first-letter {
+  text-transform: uppercase;
+}
+
+.postComments {
+  margin-top: 2.4rem;
+  flex: 1;
+  position: relative;
+}
+
+.postComments h3 {
+  margin-bottom: 1rem;
+}
+.postComments h3::before {
+  content: "";
+  width: 2px;
+  height: 1rem;
+  display: inline-block;
+  background: #22223b;
+  margin-right: 0.4rem;
+}
+.postCommentsBody {
+  overflow-y: scroll;
+
+  min-height: 300px;
+  max-height: 600px;
+  margin-bottom: 0.4rem;
+}
+
+@media (max-width: 750px) {
+  .modal {
+    padding: 2rem;
+  }
+  .post {
+    flex-direction: column;
+    max-height: 550px;
+  }
+  .postContent {
+    border-radius: 0.4rem 0.4rem 0 0;
+  }
+
+  .postComments {
+    margin-left: 0.875rem;
+    padding: 1rem;
+    margin-right: 0.875rem;
+    margin-top: -1rem;
+    max-height: 300px;
+    overflow-y: scroll;
+    position: relative;
+  }
+
+  .postCommentsBody {
+    max-height: max-content;
+    overflow-y: none;
+  }
+}
