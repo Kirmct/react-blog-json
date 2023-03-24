@@ -6,6 +6,7 @@ Projeto de um blog consumindo a API do JSONPlaceholder. <br/>
 
 <p align="center">
 <a href="#-instalacao">Instalação</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+<a href="#-ParaRodar">Para Rodar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;  
 </p>
@@ -19,6 +20,10 @@ Para o funcionamento do projeto, no terminal, precisamos instalar as seguintes p
 - npm install
 - npm intall axios
 - npm install react-router-dom
+
+## Para Rodar
+
+- npm run dev
 
 ## Tecnologias
 
