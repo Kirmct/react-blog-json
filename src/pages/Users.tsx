@@ -32,7 +32,7 @@ const Users = () => {
       {loading && <Loading />}
       {!loading &&
         users.map((item) => (
-          <Link to={`/users/${item.id}`} key={item.id}>
+          <Link to={`/react-blog-json/users/${item.id}`} key={item.id}>
             <User key={item.id} user={item} />
           </Link>
         ))}

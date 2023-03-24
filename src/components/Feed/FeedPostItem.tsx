@@ -46,7 +46,7 @@ const FeedPostItem = ({ post, user, setModalPost, setUserPost }: Props) => {
     <li className={`${styles.cardContainer} moveRight`} onClick={handleClick}>
       <div className={styles.cardHeader}>
         <div className={styles.cardHeaderInfo}>
-          <Link to={`/users/${user.id}`}>
+          <Link to={`/react-blog-json/users/${user.id}`}>
             <h3>@{user?.username}</h3>
           </Link>
           <p>{user.name}</p>

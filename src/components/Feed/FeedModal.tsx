@@ -51,7 +51,7 @@ const FeedModal = ({ post, user, setModalPost }: Props) => {
               <div className={styles.postContent}>
                 <div className={styles.postTitle}>
                   <div>
-                    <Link to={`/users/${post.userId}`}>
+                    <Link to={`/react-blog-json/users/${post.userId}`}>
                       <h2>@{user.username}</h2>
                     </Link>
                     <h5>{user.name}</h5>
