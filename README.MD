@@ -6,7 +6,7 @@ Projeto de um blog consumindo a API do JSONPlaceholder. <br/>
 
 <p align="center">
 <a href="#-instalacao">Instalação</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-<a href="#-ParaRodar">Para Rodar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+<a href="#p-araRodar">Para Rodar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;  
 </p>
@@ -15,7 +15,8 @@ Projeto de um blog consumindo a API do JSONPlaceholder. <br/>
 
 ## Instalação
 
-Para o funcionamento do projeto, no terminal, precisamos instalar as seguintes propriedades:
+Para o funcionamento do projeto, precuisamos ter o node instalado, podemos baixá-lo em [NodeJs](https://nodejs.org/en). <br>
+Após o Node instalado, no diretório do projeto rodamos os seguintes comandos:
 
 - npm install
 - npm intall axios
