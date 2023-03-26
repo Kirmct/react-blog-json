@@ -1,0 +1,35 @@
+@keyframes moveUpAndDown {
+  0% {
+    bottom: 80px;
+  }
+  50% {
+    bottom: 85px;
+  }
+  100% {
+    bottom: 80px;
+  }
+}
+.btnTop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  background-color: #ffffff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  z-index: 100000;
+  position: fixed;
+  right: 20px;
+  bottom: 80px;
+  border: none;
+  color: #0a102f;
+  transition: 0.3s;
+  animation: moveUpAndDown 1.5s ease-in-out infinite;
+  cursor: pointer;
+}
+
+.btnTop:hover {
+  opacity: 0.9;
+  animation: none;
+}

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import FeedModal from "../components/Feed/FeedModal";
 import FeedPost from "../components/Feed/FeedPost";
+import ScrollTopButton from "../components/ScrollTopButton/ScrollTopButton";
 import { PostType } from "../types/PostType";
 import { UserType } from "../types/UserType";
 
@@ -20,6 +21,7 @@ const Home = () => {
           />
         )}
         <FeedPost setModalPost={setModalPost} setUserPost={setUserPost} />
+        <ScrollTopButton />
       </div>
     </>
   );
