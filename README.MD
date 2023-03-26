@@ -15,7 +15,7 @@ Projeto de um blog consumindo a API do JSONPlaceholder. <br/>
 
 ## Instalação
 
-Para o funcionamento do projeto, precuisamos ter o node instalado, podemos baixá-lo em [NodeJs](https://nodejs.org/en). <br>
+Para o funcionamento do projeto, precisamos ter o node instalado, podemos baixá-lo em [NodeJs](https://nodejs.org/en). <br>
 Após o Node instalado, no diretório do projeto rodamos os seguintes comandos:
 
 - npm install
