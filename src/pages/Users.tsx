@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 import { api } from "../api";
+import ScrollTopButton from "../components/ScrollTopButton/ScrollTopButton";
 import User from "../components/User/User";
 import Loading from "../helpers/Loading";
 import { UserType } from "../types/UserType";
@@ -36,6 +37,7 @@ const Users = () => {
             <User key={item.id} user={item} />
           </Link>
         ))}
+      <ScrollTopButton />
     </div>
   );
 };
